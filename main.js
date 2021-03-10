@@ -66,7 +66,7 @@ function clickDot(i) {
     showItem();
     showDot();
     resetTimer();
-    
+
 }
 
 for (let i =0; i < dots.length; i++) {
@@ -86,4 +86,10 @@ function resetTimer(){
     clearInterval();
     // 重新設定間隔
     timer = setInterval(autoPlay, interval);
+}
+
+var showdots = box.getAttribute("data-s-showdots");
+
+if (showdots == "false") {
+    
 }

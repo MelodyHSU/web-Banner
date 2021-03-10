@@ -22,7 +22,7 @@
         display: block;
     }
 
-    @for $index from 1 through 3 {
+    @for $index from 1 through 10 {
         .slider-item:nth-of-type(#{$index}) {
             background-image: url(./img/item#{$index}.jpg);
         }

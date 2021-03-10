@@ -36,6 +36,34 @@
   background-image: url(./img/item3.jpg);
 }
 
+#slider-box .slider-item:nth-of-type(4) {
+  background-image: url(./img/item4.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(5) {
+  background-image: url(./img/item5.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(6) {
+  background-image: url(./img/item6.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(7) {
+  background-image: url(./img/item7.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(8) {
+  background-image: url(./img/item8.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(9) {
+  background-image: url(./img/item9.jpg);
+}
+
+#slider-box .slider-item:nth-of-type(10) {
+  background-image: url(./img/item10.jpg);
+}
+
 #slider-box h1 {
   color: #fff;
   font-size: 72px;
