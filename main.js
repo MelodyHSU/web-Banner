@@ -45,3 +45,45 @@ function showItem() {
     items[index].classList.add("slider-active");
 }
 
+// 取得所有點點
+var dots = document.getElementsByClassName("slider-dot");
+
+// 顯示點點
+function showDot() {
+  
+    for (let i = 0; i < dots.length; i++) {
+        dot[i].classList.remove("slider-dot-active");
+
+    }
+
+    dots[index].classList.add("slider-dot-active");
+}
+
+// 點擊點點(接收點點的編號)
+function clickDot(i) {
+    // 更新編號
+    index = i ;
+    showItem();
+    showDot();
+    resetTimer();
+    
+}
+
+for (let i =0; i < dots.length; i++) {
+    dots[i].onclick = function (){
+        clickDot(i)
+
+
+    };
+}
+
+// 自動播放
+var timer = setInterval(autoPlay, interval);
+
+// 重新設定計時器
+function resetTimer(){
+    // // 清除計時器
+    clearInterval();
+    // 重新設定間隔
+    timer = setInterval(autoPlay, interval);
+}
